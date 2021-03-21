@@ -1,4 +1,4 @@
-async function fetchBooks() {
+function fetchBooks() {
   // To pass the tests, don't forget to return your fetch!
   return fetch('https://anapioficeandfire.com/api/books')
   .then(response => response.json())
@@ -15,5 +15,5 @@ function renderBooks(books) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  let book = fetchBooks()
+  fetchBooks()
 });
